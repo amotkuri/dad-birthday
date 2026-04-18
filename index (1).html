@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Nanna!</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,sans-serif;background:#FFFBF5;color:#1a1a1a}
+  .wrap{max-width:720px;margin:0 auto;padding:0 0 4rem}
+  .hero{text-align:center;padding:3rem 1.5rem 2rem;background:#FFF8F0;border-bottom:2px solid #FAEEDA}
+  .lang-btn{display:inline-block;font-size:13px;font-weight:600;background:#FAEEDA;color:#412402;border:1.5px solid #BA7517;border-radius:20px;padding:6px 18px;cursor:pointer;margin-bottom:1.2rem;transition:background .2s}
+  .lang-btn:hover{background:#FAC775}
+  .hero h1{font-size:38px;font-weight:700;color:#412402;line-height:1.2;margin-bottom:.5rem}
+  .hero-sub{font-size:16px;color:#633806;margin-bottom:1.4rem}
+  .age-pill{display:inline-flex;align-items:center;gap:10px;background:#fff;border:2px solid #BA7517;border-radius:40px;padding:10px 24px}
+  .age-num{font-size:32px;font-weight:700;color:#412402}
+  .age-label{font-size:14px;color:#633806}
+  .section{padding:2rem 1.5rem 0}
+  .sec-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#412402;background:#FAEEDA;display:inline-block;padding:4px 12px;border-radius:10px;margin-bottom:1.2rem}
+  .photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  @media(max-width:500px){.photo-grid{grid-template-columns:1fr}}
+  .photo-card{border-radius:14px;overflow:hidden;border:2px solid #FAEEDA;background:#fff}
+  .photo-card img{width:100%;height:200px;object-fit:cover;display:block}
+  .photo-cap{padding:10px 14px}
+  .photo-cap .year{font-size:11px;font-weight:700;color:#412402;background:#FAEEDA;border-radius:8px;padding:3px 10px;display:inline-block;margin-bottom:5px}
+  .photo-cap .caption{font-size:13px;color:#222;line-height:1.5}
+  .lessons{display:flex;flex-direction:column;gap:10px}
+  .lesson{display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:#FFF8F0;border:1.5px solid #FAEEDA;border-radius:10px}
+  .lnum{font-size:12px;font-weight:700;color:#412402;background:#FAEEDA;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+  .ltext{font-size:14px;color:#1a1a1a;line-height:1.6}
+  .joke-box{background:#FFF8F0;border:1.5px solid #FAEEDA;border-radius:10px;padding:14px 18px;margin-bottom:10px;cursor:pointer}
+  .joke-box:hover{border-color:#BA7517}
+  .jq{font-size:14px;font-weight:600;color:#1a1a1a;margin-bottom:4px}
+  .ja{font-size:14px;color:#412402;font-style:italic;display:none;margin-top:6px;padding-top:6px;border-top:1px dashed #FAEEDA}
+  .ja.shown{display:block}
+  .jbtn{font-size:12px;color:#633806;background:none;border:none;padding:0;cursor:pointer;margin-top:6px;font-weight:600}
+  .message-box{background:#FFF8F0;border-left:4px solid #BA7517;border-radius:0 14px 14px 0;padding:1.4rem 1.8rem;margin:0 1.5rem;font-size:15px;color:#1a1a1a;line-height:1.8;font-family:Georgia,serif}
+  .footer{text-align:center;padding:2.5rem 1rem 0;border-top:2px dashed #FAEEDA;margin-top:2.5rem}
+  .footer p{font-size:16px;color:#412402}
+  .footer strong{color:#412402}
+  .star-row{font-size:22px;letter-spacing:8px;margin-bottom:.6rem;display:block;color:#BA7517}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <button class="lang-btn" id="langBtn" onclick="toggleLang()">తెలుగులో చదవండి (Read in Telugu)</button>
+    <h1 class="en">Happy Birthday, Nanna</h1>
+    <h1 class="te hidden" style="font-size:30px">జన్మదిన శుభాకాంక్షలు, నాన్న</h1>
+    <p class="hero-sub en">Radha Motkuri — chemist, father, our everything.</p>
+    <p class="hero-sub te hidden">రాధా మోత్కూరి — రసాయన శాస్త్రవేత్త, తండ్రి, మన సర్వస్వం.</p>
+    <div class="age-pill">
+      <span class="age-num">51</span>
+      <span class="age-label en">years of being incredible</span>
+      <span class="age-label te hidden">అద్భుతమైన సంవత్సరాలు</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-label en">Memories through the years</div>
+    <div class="sec-label te hidden">సంవత్సరాల జ్ఞాపకాలు</div>
+    <div class="photo-grid">
+      <div class="photo-card">
+        <img src="IMG_0083.jpg" alt="Family trip India 2022">
+        <div class="photo-cap">
+          <span class="year">2022</span>
+          <div class="caption en">Family trip to India — all smiles and full hearts.</div>
+          <div class="caption te hidden">భారతదేశ కుటుంబ యాత్ర — చిరునవ్వులతో నిండిన క్షణాలు.</div>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="IMG_1403.jpg" alt="Award dinner">
+        <div class="photo-cap">
+          <span class="year">2024</span>
+          <div class="caption en">His award dinner — so proud to be by his side.</div>
+          <div class="caption te hidden">అతని అవార్డు విందు — అతని పక్కన నిలబడడం చాలా గర్వంగా ఉంది.</div>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="IMG_1878.jpg" alt="Diwali">
+        <div class="photo-cap">
+          <span class="year">Diwali</span>
+          <div class="caption en">The night we sang together on stage — a memory forever.</div>
+          <div class="caption te hidden">మేము వేదిక మీద కలిసి పాడిన రాత్రి — శాశ్వత జ్ఞాపకం.</div>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="IMG_1544.jpg" alt="Dubai 2025">
+        <div class="photo-cap">
+          <span class="year">Dubai 2025</span>
+          <div class="caption en">Dubai adventures — the whole family goofing around.</div>
+          <div class="caption te hidden">దుబాయ్ సాహసాలు — కుటుంబం అంతా సరదాగా గడిపిన వేళ.</div>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="IMG_1317.jpg" alt="India 2025">
+        <div class="photo-cap">
+          <span class="year">India 2025</span>
+          <div class="caption en">Back to India, summer 2025 — roots always call us home.</div>
+          <div class="caption te hidden">2025 వేసవిలో భారతదేశానికి తిరిగి — వేళ్ళు ఎప్పుడూ ఇంటికి పిలుస్తాయి.</div>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="IMG_2429.jpg" alt="Shirdi 2025">
+        <div class="photo-cap">
+          <span class="year">Shirdi 2025</span>
+          <div class="caption en">Shirdi pilgrimage — faith, family, and blessings.</div>
+          <div class="caption te hidden">షిర్డీ యాత్ర — విశ్వాసం, కుటుంబం మరియు దీవెనలు.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-label en">Things you taught me</div>
+    <div class="sec-label te hidden">మీరు నాకు నేర్పిన విషయాలు</div>
+    <div class="lessons">
+      <div class="lesson"><div class="lnum">1</div><div class="ltext en">Work hard and stay curious — knowledge is the one thing nobody can ever take from you.</div><div class="ltext te hidden">కష్టపడి పని చేయి, ఆసక్తిగా ఉండు — జ్ఞానం మాత్రమే ఎవరూ తీసుకోలేనిది.</div></div>
+      <div class="lesson"><div class="lnum">2</div><div class="ltext en">Family always comes first — no matter how busy life gets.</div><div class="ltext te hidden">కుటుంబం ఎప్పుడూ మొదట — జీవితం ఎంత బిజీగా ఉన్నా సరే.</div></div>
+      <div class="lesson"><div class="lnum">3</div><div class="ltext en">Be precise and detail-oriented — whether it's chemistry or life, the details always matter.</div><div class="ltext te hidden">ఖచ్చితంగా ఉండు — రసాయన శాస్త్రంలో అయినా, జీవితంలో అయినా వివరాలు ముఖ్యం.</div></div>
+      <div class="lesson"><div class="lnum">4</div><div class="ltext en">Never stop learning — you're still proof of that at 51, and we love you for it.</div><div class="ltext te hidden">నేర్చుకోవడం ఆపకు — 51 సంవత్సరాల వయసులో కూడా మీరు అందుకు నిదర్శనం.</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-label en">Scientist dad jokes</div>
+    <div class="sec-label te hidden">శాస్త్రవేత్త నాన్న జోకులు</div>
+    <div class="joke-box" onclick="toggleJoke(this)">
+      <div class="jq en">Why can't you trust an atom?</div>
+      <div class="jq te hidden">అణువును ఎందుకు నమ్మలేం?</div>
+      <div class="ja"><span class="en">Because they make up everything! — Even this joke, Nanna.</span><span class="te hidden">అవి అన్నీ కల్పిస్తాయి! — ఈ జోకు కూడా సహా, నాన్న.</span></div>
+      <button class="jbtn en">Reveal punchline ▾</button>
+      <button class="jbtn te hidden">సమాధానం చూడు ▾</button>
+    </div>
+    <div class="joke-box" onclick="toggleJoke(this)">
+      <div class="jq en">What did the chemist say when he found two helium isotopes?</div>
+      <div class="jq te hidden">రెండు హీలియం ఐసోటోప్‌లు కనుగొన్న రసాయన శాస్త్రవేత్త ఏమన్నాడు?</div>
+      <div class="ja"><span class="en">HeHe! Perfect dad joke energy.</span><span class="te hidden">HeHe! అదే నాన్న జోకు శక్తి.</span></div>
+      <button class="jbtn en">Reveal punchline ▾</button>
+      <button class="jbtn te hidden">సమాధానం చూడు ▾</button>
+    </div>
+    <div class="joke-box" onclick="toggleJoke(this)">
+      <div class="jq en">Why do chemists make the best friends?</div>
+      <div class="jq te hidden">రసాయన శాస్త్రవేత్తలు అత్యుత్తమ మిత్రులు ఎందుకు అవుతారు?</div>
+      <div class="ja"><span class="en">Because they've got all the right elements! Just like you, Nanna.</span><span class="te hidden">వారికి అన్ని సరైన మూలకాలు ఉన్నాయి! మీలాగే, నాన్న.</span></div>
+      <button class="jbtn en">Reveal punchline ▾</button>
+      <button class="jbtn te hidden">సమాధానం చూడు ▾</button>
+    </div>
+  </div>
+
+  <div class="section" style="padding-bottom:0">
+    <div class="sec-label en">A message for you</div>
+    <div class="sec-label te hidden">మీకు ఒక సందేశం</div>
+    <div class="message-box">
+      <span class="en">Nanna, you have given us everything — your time, your patience, your wisdom, and your love. You worked so hard so we could dream big. Watching you receive that award, singing with you on Diwali, traveling the world together — these are the moments I will carry forever. Happy 51st birthday. You deserve every good thing this world has to offer. We love you more than words can say.</span>
+      <span class="te hidden">నాన్న, మీరు మాకు అన్నీ ఇచ్చారు — మీ సమయం, ఓర్పు, జ్ఞానం మరియు ప్రేమ. మేము పెద్ద కలలు కనగలిగేందుకు మీరు చాలా కష్టపడ్డారు. మీరు అవార్డు అందుకోవడం చూడడం, దీపావళిలో కలిసి పాడడం, ప్రపంచాన్ని కలిసి చూడడం — ఈ క్షణాలు నేను శాశ్వతంగా గుర్తుపెట్టుకుంటాను. 51వ జన్మదిన శుభాకాంక్షలు. మీకు ఈ ప్రపంచంలోని ప్రతి మంచి విషయమూ లభించాలి. మేము మీద అమితంగా ప్రేమిస్తున్నాం.</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="star-row">✦ ✦ ✦ ✦ ✦</span>
+    <p class="en">Here's to <strong>51 amazing years</strong> of you, Nanna.</p>
+    <p class="te hidden">మీ <strong>51 అద్భుతమైన సంవత్సరాలకు</strong> జన్మదిన శుభాకాంక్షలు, నాన్న.</p>
+    <p style="margin-top:10px;font-size:13px;color:#633806" class="en">Love you to the periodic table and back.</p>
+    <p style="margin-top:10px;font-size:13px;color:#633806" class="te hidden">మిమ్మల్ని ఆవర్తన పట్టిక అంత ప్రేమిస్తున్నాం.</p>
+  </div>
+
+</div>
+<script>
+var isTE = false;
+function toggleLang(){
+  isTE = !isTE;
+  document.querySelectorAll('.en').forEach(function(el){el.classList.toggle('hidden',isTE)});
+  document.querySelectorAll('.te').forEach(function(el){el.classList.toggle('hidden',!isTE)});
+  document.getElementById('langBtn').textContent = isTE ? 'Read in English' : 'తెలుగులో చదవండి (Read in Telugu)';
+}
+function toggleJoke(box){
+  var a=box.querySelector('.ja');
+  var shown=a.classList.toggle('shown');
+  box.querySelectorAll('.jbtn').forEach(function(b){
+    if(b.classList.contains('en')) b.textContent=shown?'Hide ▴':'Reveal punchline ▾';
+    else b.textContent=shown?'దాచు ▴':'సమాధానం చూడు ▾';
+  });
+}
+</script>
+</body>
+</html>
